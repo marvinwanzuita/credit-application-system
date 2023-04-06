@@ -8,19 +8,19 @@ import java.math.BigDecimal
 data class CustomerUpdateDto(
 
     @field:NotEmpty(message = "Invalid input")
-    val firstName: String,
+    var firstName: String,
 
     @field:NotEmpty(message = "Invalid input")
-    val lastName: String,
+    var lastName: String,
 
     @field:NotNull(message = "Invalid input.")
-    val income: BigDecimal,
+    var income: BigDecimal,
 
     @field:NotEmpty(message = "Invalid input")
-    val zipCode: String,
+    var zipCode: String,
 
     @field:NotEmpty(message = "Invalid input")
-    val street: String
+    var street: String
 ) {
 
     fun toEntity(customer: Customer) : Customer {

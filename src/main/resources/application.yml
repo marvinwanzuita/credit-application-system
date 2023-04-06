@@ -3,8 +3,8 @@ spring:
   datasource:
     url: jdbc:h2:mem:credit_application_system_db
   jpa:
-    show-sql: true
-#    hibernate:
+    hibernate:
+      show-sql: true
     properties:
       hibernate.format_sql: true
   h2:
@@ -14,3 +14,6 @@ spring:
       settings:
         trace: false
         web-allow-others: false
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

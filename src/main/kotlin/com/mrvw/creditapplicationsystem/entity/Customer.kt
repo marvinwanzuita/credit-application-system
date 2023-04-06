@@ -4,6 +4,7 @@ import jakarta.persistence.*
 import java.math.BigDecimal
 
 @Entity
+@Table(name = "Customer")
 data class Customer(
 
     @Column(nullable = false)
@@ -34,6 +35,6 @@ data class Customer(
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id : Long? = null
+    var id : Long? = null
 
 )

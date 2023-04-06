@@ -11,30 +11,30 @@ import java.math.BigDecimal
 data class CustomerDto(
 
     @field:NotEmpty(message = "Invalid input")
-    val firstName: String,
+    var firstName: String,
 
     @field:NotEmpty(message = "Invalid input")
-    val lastName: String,
+    var lastName: String,
 
     @field:NotEmpty(message = "Invalid input")
     @field:CPF(message = "This invalid CPF")
-    val cpf: String,
+    var cpf: String,
 
     @field:NotNull(message = "Invalid input")
-    val income: BigDecimal,
+    var income: BigDecimal,
 
     @field:NotEmpty(message = "Invalid input")
     @field:Email(message = "Invalid email")
-    val email : String,
+    var email : String,
 
     @field:NotEmpty(message = "Invalid input")
-    val password: String,
+    var password: String,
 
     @field:NotEmpty(message = "Invalid input")
-    val zipCode: String,
+    var zipCode: String,
 
     @field:NotEmpty(message = "Invalid input")
-    val street: String
+    var street: String
 ) {
 
     fun toEntity(): Customer = Customer(

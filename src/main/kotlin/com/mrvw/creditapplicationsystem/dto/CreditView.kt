@@ -7,12 +7,12 @@ import java.util.UUID
 
 data class CreditView (
 
-    val creditCode: UUID,
-    val creditValue: BigDecimal,
-    val numberOfInstallment: Int,
-    val status: Status,
-    val emailCustomer: String?,
-    val incomeCustomer: BigDecimal?
+    var creditCode: UUID,
+    var creditValue: BigDecimal,
+    var numberOfInstallment: Int,
+    var status: Status,
+    var emailCustomer: String?,
+    var incomeCustomer: BigDecimal?
 
 ){
 
